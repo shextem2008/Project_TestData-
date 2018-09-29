@@ -1,0 +1,29 @@
+Question 1. Using Microsoft SQL Server, create a relational database schema that will store the data for this project include the table relationships and create scripts with the columns necessary to hold your typical data requirements. For example, there will be a Jobs table.
+Answer: Database Created is named [TestData]
+
+Question 2.Create the other tables you will need for the project including the relationships if any.
+Answer:  Tables created are 
+	PayrollEmployee : Contain data listing all employees with there profile and status 
+	JobHeader:  lets you group similar projects together using projectId 
+	JobDetail:  contains detailed info on the project per employee, relating to the JobheaderID/ProjectID e.g(Time,Rates)
+
+Question 3. Create a stored procedure you will need to save employee time entry from a client application.
+Answer:	Store procedure is named [JobDetail_Insertion]
+
+Question 4. Create a stored procedure to retrieve an employee's time for each day of each week for the previous four weeks.
+Answer: Store procedure is named [JobDetail_Time_Retrieve]
+
+
+Qusetion 5. If you want to be able to switch your client application to use a different 
+   database that is not SQL Server, how will you design the data access
+   code in your application to be database agnostic?
+
+Answer: Switch client application between database through 
+
+1. A web service which is a web-based functionality accessed using the protocols of 
+   the web to be used by the web applications
+
+2. ftp server transfer which is an is an acronym for File Transfer Protocol, its used to transfer file
+   is used to transfer files between computers on a network.
+
+
